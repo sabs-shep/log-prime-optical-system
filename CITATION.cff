@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use or build on this work, please cite it."
+title: "Log-Prime Encoded Optical Logic and Multiplexing System"
+type: software
+authors:
+  - family-names: "Shepherd"
+    given-names: "Sebastian"
+version: "0.1.2-defensive-disclosure"
+date-released: "2026-07-31"
+doi: "10.5281/zenodo.xxxxxxx"
+repository-code: "https://github.com/sabs-shep/log-prime-optical-system"
