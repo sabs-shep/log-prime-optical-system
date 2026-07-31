@@ -1,3 +1,5 @@
+**Archived DOI:** https://doi.org/10.5281/zenodo.21724070
+
 Log-Prime Optical Encoding and Single-Detector Decoding System
 Author: Sebastian Shepherd
 Original disclosure date: 30 July 2026
