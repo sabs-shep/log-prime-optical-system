@@ -1,1 +1,41 @@
+cff-version: 1.2.0
+title: "Log-Prime Encoded Optical Logic and Multiplexing System"
+message: "If you use, cite, adapt, test, reproduce, or build on this work, please cite the original disclosure."
+type: software
 
+authors:
+  - family-names: Shepherd
+    given-names: Sebastian
+
+date-released: 2026-07-30
+version: "0.1-defensive-disclosure"
+
+abstract: "A defensive technical disclosure and software/theory proof of concept for log-prime optical frequency/code generation, calculated wavelength-to-pixel mapping, LCD spectral masking, simulated mapped-lane optical NOR behaviour, and single-detector mean-voltage-code decoding."
+
+repository-code: "https://github.com/sabs-shep/log-prime-optical-system"
+
+license: "CC-BY-SA-4.0 AND AGPL-3.0-or-later AND CERN-OHL-S-2.0"
+
+keywords:
+  - log-prime encoding
+  - optical encoding
+  - single-detector decoding
+  - wavelength mapping
+  - LCD spectral masking
+  - optical NOR
+  - photodetector decoding
+  - defensive disclosure
+  - open hardware
+  - optical computing
+
+preferred-citation:
+  type: report
+  title: "Log-Prime Encoded Optical Logic and Multiplexing System"
+  authors:
+    - family-names: Shepherd
+      given-names: Sebastian
+  year: 2026
+  date-released: 2026-07-30
+  version: "0.1-defensive-disclosure"
+  abstract: "Defensive technical disclosure and software/theory proof of concept for a log-prime optical frequency/code generation and single-detector decoding architecture."
+  url: "https://github.com/sabs-shep/log-prime-optical-system"
