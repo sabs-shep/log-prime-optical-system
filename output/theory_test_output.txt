@@ -1,0 +1,184 @@
+py -3.13 main.py --force-map --input1-channels 1,5,12 --input2-active-count 6 --seed 1234 --skip-external-nor
+
+====================================================================================================
+1. Generate wavelength/log-prime LCD map
+====================================================================================================
+$ C:\Users\sebsh\AppData\Local\Programs\Python\Python313\python.exe Wavelength_LCD_Encoder.py
+
+==========================================================================================
+Mode:                  cropped_window
+Channels:              12
+Lens:                  100.0 mm
+Wavelength window:     495.000 to 740.000 nm
+Equation:              frequency_THz = A * log2(P) + B
+A:                     47.634780251 THz
+B:                     357.490162992 THz
+Integer pixel range:   0 to 110
+Integer pixel span:    110 px
+Minimum integer gap:   2 px
+Max snap error:        0.3723 px
+Duplicate pixels:      False
+Fits LCD:              True
+Passes integer gaps:   True
+Passes snap error:     True
+VALID:                 True
+==========================================================================================
+
+First 10 mapped integer columns:
+px=  0  ch=12  P=37  targetlambda=495.000nm  actuallambda=495.000nm  snap=+0.000px  gap-boundary=493.781-496.218nm
+px=  4  ch=11  P=31  targetlambda=505.141nm  actuallambda=504.721nm  snap=-0.173px  gap-boundary=503.509-505.933nm
+px=  6  ch=10  P=29  targetlambda=509.073nm  actuallambda=509.561nm  snap=+0.202px  gap-boundary=508.353-510.769nm
+px= 12  ch= 9  P=23  targetlambda=523.226nm  actuallambda=523.995nm  snap=+0.321px  gap-boundary=522.797-525.192nm
+px= 17  ch= 8  P=19  targetlambda=535.497nm  actuallambda=535.924nm  snap=+0.179px  gap-boundary=534.735-537.112nm
+px= 20  ch= 7  P=17  targetlambda=542.910nm  actuallambda=543.037nm  snap=+0.054px  gap-boundary=541.854-544.220nm
+px= 28  ch= 6  P=13  targetlambda=561.662nm  actuallambda=561.845nm  snap=+0.078px  gap-boundary=560.676-563.013nm
+px= 33  ch= 5  P=11  targetlambda=574.008nm  actuallambda=573.479nm  snap=-0.228px  gap-boundary=572.320-574.637nm
+px= 49  ch= 4  P=7  targetlambda=610.304nm  actuallambda=610.068nm  snap=-0.105px  gap-boundary=608.940-611.196nm
+px= 63  ch= 3  P=5  targetlambda=640.453nm  actuallambda=641.272nm  snap=+0.372px  gap-boundary=640.171-642.373nm
+
+Last 10 mapped integer columns:
+px=  6  ch=10  P=29  targetlambda=509.073nm  actuallambda=509.561nm  snap=+0.202px  gap-boundary=508.353-510.769nm
+px= 12  ch= 9  P=23  targetlambda=523.226nm  actuallambda=523.995nm  snap=+0.321px  gap-boundary=522.797-525.192nm
+px= 17  ch= 8  P=19  targetlambda=535.497nm  actuallambda=535.924nm  snap=+0.179px  gap-boundary=534.735-537.112nm
+px= 20  ch= 7  P=17  targetlambda=542.910nm  actuallambda=543.037nm  snap=+0.054px  gap-boundary=541.854-544.220nm
+px= 28  ch= 6  P=13  targetlambda=561.662nm  actuallambda=561.845nm  snap=+0.078px  gap-boundary=560.676-563.013nm
+px= 33  ch= 5  P=11  targetlambda=574.008nm  actuallambda=573.479nm  snap=-0.228px  gap-boundary=572.320-574.637nm
+px= 49  ch= 4  P=7  targetlambda=610.304nm  actuallambda=610.068nm  snap=-0.105px  gap-boundary=608.940-611.196nm
+px= 63  ch= 3  P=5  targetlambda=640.453nm  actuallambda=641.272nm  snap=+0.372px  gap-boundary=640.171-642.373nm
+px= 87  ch= 2  P=3  targetlambda=692.378nm  actuallambda=692.964nm  snap=+0.278px  gap-boundary=691.910-694.016nm
+px=110  ch= 1  P=2  targetlambda=740.000nm  actuallambda=740.335nm  snap=+0.166px  gap-boundary=739.328-741.341nm
+
+Prime product log10:   12.870
+
+Saved CSV: integer_log_prime_wavelength_map.csv
+Saved CFG: integer_log_prime_wavelength_map.cfg
+
+Top candidates:
+ 1. valid=True  mode=cropped_window    channels=12  lens=100  mm  range=495.0-740.0nm  px=0-110  gap=2  snap=0.372px  log10P=12.87
+ 2. valid=True  mode=cropped_window    channels=12  lens=100  mm  range=420.0-713.5nm  px=0-127  gap=2  snap=0.400px  log10P=12.87
+ 3. valid=True  mode=cropped_window    channels=12  lens=100  mm  range=445.0-733.8nm  px=0-127  gap=2  snap=0.407px  log10P=12.87
+ 4. valid=True  mode=cropped_window    channels=12  lens=80   mm  range=500.0-740.0nm  px=0-86  gap=2  snap=0.409px  log10P=12.87
+ 5. valid=True  mode=cropped_window    channels=12  lens=100  mm  range=460.0-740.0nm  px=0-124  gap=2  snap=0.415px  log10P=12.87
+ 6. valid=True  mode=cropped_window    channels=12  lens=100  mm  range=510.0-740.0nm  px=0-104  gap=2  snap=0.433px  log10P=12.87
+ 7. valid=True  mode=cropped_window    channels=12  lens=80   mm  range=480.0-740.0nm  px=0-93  gap=2  snap=0.435px  log10P=12.87
+ 8. valid=True  mode=cropped_window    channels=12  lens=100  mm  range=415.0-709.5nm  px=0-127  gap=2  snap=0.438px  log10P=12.87
+ 9. valid=True  mode=cropped_window    channels=12  lens=80   mm  range=505.0-740.0nm  px=0-85  gap=2  snap=0.439px  log10P=12.87
+10. valid=True  mode=cropped_window    channels=12  lens=100  mm  range=450.0-737.9nm  px=0-127  gap=2  snap=0.440px  log10P=12.87
+
+Mapped optical wavelength lanes: 12
+Mapped LCD pixels: [0, 4, 6, 12, 17, 20, 28, 33, 49, 63, 87, 110]
+
+====================================================================================================
+2. Generate Input 1 vector/pattern
+====================================================================================================
+$ C:\Users\sebsh\AppData\Local\Programs\Python\Python313\python.exe optical_lcd_codec.py encode --map integer_log_prime_wavelength_map.cfg --channels 1,5,12 --out input1
+Saved: input1.txt
+Saved: input1.json
+Saved: input1.pbm
+Saved: input1.c
+
+Encoded channels decoded back from generated pattern:
+  channel 1: amplitude 1, x=110
+  channel 5: amplitude 1, x=33
+  channel 12: amplitude 1, x=0
+
+====================================================================================================
+3. Generate random Input 2 vector/pattern
+====================================================================================================
+$ C:\Users\sebsh\AppData\Local\Programs\Python\Python313\python.exe random_input.py --map integer_log_prime_wavelength_map.cfg --amp-min 1 --amp-max 1 --seed 1234 --out input2 --active-count 6
+Saved input2.txt
+Saved input2.pbm
+Saved input2.json
+Saved input2.c
+
+Random Input 2 Summary
+----------------------
+Mapped channels available: 12
+Active channels selected:  6
+Seed:                      1234
+Amplitude range:           1..1
+Vertical mode:             bottom
+
+channel=  1  amp= 1  x=110  prime=2  wavelength_nm=740.3349297816112
+channel=  2  amp= 1  x= 87  prime=3  wavelength_nm=692.9638059705146
+channel=  6  amp= 1  x= 28  prime=13  wavelength_nm=561.8450145421746
+channel=  8  amp= 1  x= 17  prime=19  wavelength_nm=535.923612897034
+channel= 10  amp= 1  x=  6  prime=29  wavelength_nm=509.56110752575466
+channel= 11  amp= 1  x=  4  prime=31  wavelength_nm=504.7214751622113
+Skipping external NOR script; main.py will compute mapped NOR output.
+
+====================================================================================================
+5. Decode unknown mean voltage back into active mapped channels
+====================================================================================================
+$ C:\Users\sebsh\AppData\Local\Programs\Python\Python313\python.exe nor_voltage_decoder.py --map integer_log_prime_wavelength_map.cfg --actual-nor nor_result.json --precision 5000 --voltage-tolerance 0.000001 --out unknown_decode_report.json --vector-out decoded_unknown_vector.txt --simulate-from-actual
+
+Product-Tree Unknown Mean-Voltage Decode
+----------------------------------------
+Mapped channels:              12
+Recovered active count:       4
+Measured voltage:             1.23810139054e0 V
+Expected decoded voltage:     1.23810139054e0 V
+Absolute error:               0 V
+Candidate counts after prune: 11
+Decimal exp attempts:         1
+Factor attempts:              1
+Product-tree extractions:     1
+Decode time:                  0.431163 s
+Total time:                   14.958729 s
+
+Minimum Voltage Accuracy Required for Exact Prime Reconstruction
+Diagnostic only
+----------------------------------------------------------------
+Prime product digits:              5
+log10(product):                    4.136245
+Minimum voltage accuracy:          +/-9.13392155890e-7 V
+Positive-side safe error:          +9.13392155890e-7 V
+Negative-side safe error:          -9.13425528518e-7 V
+
+Meaning:
+  This is the strict mathematical tolerance needed for the decoder
+  to reconstruct the exact prime product using round(exp(kL)).
+  This is useful as a diagnostic/proof metric, but it is NOT the
+  practical voltage target for reconstructing the 12-lane core output.
+
+Decoded active channels:      [3, 4, 7, 9]
+Decoded active pixels:        [63, 49, 20, 12]
+Matches actual NOR vector:    True
+Saved decoded vector:         decoded_unknown_vector.txt
+Saved report:                 unknown_decode_report.json
+
+Minimum Voltage Accuracy Required for Lane Reconstruction
+Practical scenario
+---------------------------------------------------------
+Optical core size:                 12 NOR lanes
+Possible lane output combinations: 4096
+ADC / voltmeter range assumed:     3.3 V
+
+Voltage spacing per lane state:    8.05664e-4 V
+Minimum voltage accuracy:          +/-4.02832e-4 V
+Recommended safer target:          +/-2.01416e-4 V
+
+Meaning:
+  This is the practical hardware requirement for reconstructing the
+  lane-state output of the scalar optical core.
+  For a 12-lane core over 3.3 V:
+    2^12 = 4096 possible lane output combinations
+    3.3 V / 4096 = about 805.7 uV per state
+    minimum half-step accuracy = about +/-402.8 uV
+    safer quarter-step target = about +/-201.4 uV
+
+====================================================================================================
+PIPELINE COMPLETE
+====================================================================================================
+Mapped optical lanes:        12
+Input 1 active mapped lanes: 3
+Input 2 active mapped lanes: 6
+NOR active mapped lanes:     4
+Decoded active mapped lanes: 4
+Decoded matches mapped NOR:  True
+Wavelength map:              integer_log_prime_wavelength_map.cfg
+Input 1 JSON:                input1.json
+Input 2 JSON:                input2.json
+Mapped NOR JSON:             nor_result.json
+Decode report:               unknown_decode_report.json
+Decoded vector:              decoded_unknown_vector.txt
